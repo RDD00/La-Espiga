@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Arial Narrow';
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+    /* BARRA <nav> */
+
+        header {
+            background-color: rgb(236, 191, 176);
+            position: fixed;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 100;
+        }
+
+        header .titulo-pag {
+            font-size: 72px;
+            color: aliceblue;
+            margin-left: 70px;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        header nav ul li a {
+            color: aliceblue;
+            transition: 0.5s;
+        }
+
+
+        header nav ul li a:hover {
+            background-color: #ff7f50;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.185);
+            text-decoration: underline 2px;
+            transition: 0.5s;
+
+        }
+
+        header nav ul li a:link {
+            color: black;
+        }
+
+        /*
+        header nav ul li a:visited {
+            color: crimson;
+        }
+        */
+
+        header nav ul li a:focus {
+            color: brown;
+        }
+
+    /*--------------------------------------*/
+
+/* ------------------------------------------------------------------------------------ */
+
+/* SEPARACIÓN DE PRIMEROS ELEMENTOS DE <nav> */
+
+.div-portada .panadería-foto {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.sect-productos {
+    padding-top: 100px;
+}
+
+.sobre-nosotros article .familia-panadera {
+    margin-top: 100px;
+    width: 500px;
+}
+
+.zona-form {
+    padding-top: 100px;
+}
+
+.padre-cont {
+    padding-top: 100px;
+}
+
+/*-----------------------------------------*/
+
+
+
+
+
+
+/* GRILLAS */
+
+    /* .sección-imag-y-text {
+        width: 1520px;
+        height: 100%;
+        border: 10px solid red;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(7 , 200px);
+        grid-template-rows: repeat(2 , 200px);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .cuadro-de-text .parrafo {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .imagenes .imag-0 {
+        grid-column: ;
+        border: 5px solid blue;
+    }
+
+    .imagenes .imag-1 {
+        grid-column: ;
+        grid-row: 1;
+        border: 5px solid blue;
+        overflow: auto;
+    }
+
+    .imagenes .imag-2 {
+        grid-column: ;
+        grid-row: 1;
+        border: 5px solid blue;
+        overflow: auto;
+    }
+
+    .imagenes .imag-3 {
+        grid-column: ;
+        grid-row: 1;
+        border: 5px solid blue;
+        overflow: auto;
+    }
+    */
+
+    /* GALERÍA */
+
+        .cont-galeria {
+            width: 942px;
+            height: 942px;
+            border: 2px solid blue;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3 , 300px);
+            grid-template-rows: repeat(3 , 300px);
+            column-gap: 20px;
+            row-gap: 20px;  
+        }
+
+        .cont-galeria .img-galeria1 {
+            grid-column: 1;
+            grid-row: 1/3;
+        }
+
+        .cont-galeria .img-galeria2 {
+            grid-column: 2/4;
+        }
+
+        .cont-galeria .img-galeria3 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .cont-galeria .img-galeria4 {
+            grid-column: 3;
+            grid-row: 2/4;
+        }
+
+        .cont-galeria .img-galeria5 {
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+
+    /* ------------------------------------------- */
+
+/*---------------------------------------*/
+
+
+/* CARDS */
+
+
+
+    /* soporte */
+        .card-content {
+            width: 500px;
+            height: 200px;
+            padding-top: 100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+        .card-content .card-style {
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+        }
+    /* ------------------------------ */
+/* ----------------------------------------- */
+
+
+
+
+
+
+/* AJUSTES GENERALES DE IMÁGENES / TEXT */
+
+    /* INICIO */
+
+        .cuadro-de-text {
+            font-size: 24px;
+        }
+
+        .parrafo {
+            font-size: 20px;
+        }
+
+        .imagenes .logo {
+            width: 227px;
+            height: 227px;
+            /*margin-left: 50px;*/
+        }
+
+    /*--------------------------------*/
+
+    /* GALERÍA */
+
+        .cont-galeria 
+        .img-galeria1 , 
+        .img-galeria2 , 
+        .img-galeria3 , 
+        .img-galeria4 , 
+        .img-galeria5 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+        }
+
+
+        .cont-galeria .img-galeria1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+    /*--------------------------------------*/
+
+    /* SOPORTE */
+
+        .zona-form {
+            background-color: rgb(236, 191, 176);
+            border-radius: 30px;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .zona-form .titulo {
+            
+        }
+
+        .zona-form .formulario {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+            padding: 10px;
+        }
+    
+    /*--------------------------------------*/
+
+
+/*---------------------------------*/
+
+
+
+/* FLEX */
+
+
+    /* INICIO */
+
+        .sección-imag-y-text {
+            /*border: 2px solid blue;*/
+            padding: 20px;
+            height: 100%;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px auto 10px;
+        }
+
+        .sección-imag-y-text .cont-portada-img {
+            background-color: #e8503cb7;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-right: 50px;
+            border-radius: 10px;
+        }
+
+        .sección-imag-y-text .cont-portada-img .padre-cont-img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /*border: 2px solid red;*/
+            margin: 0 30px 0 30px;
+        }
+
+        /*.sección-imag-y-text .imagenes {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }*/
+
+        .sección-imag-y-text .logo {
+            border-radius: 100%;
+        }
+
+        /*.sección-imag-y-text .cont-portada-img .portada-quienes-somos {
+            width: 100%;
+        }*/
+
+        .sección-imag-y-text .cont-portada-img .portada-quienes-somos .cuadro-de-text {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .sección-imag-y-text .imag-1 {
+            border: 2px solid green;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sección-imag-y-text .imag-1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+    /*-----------------------------------*/
+
+
+/*------------------------*/
+
+
+
+
+/* @media */
+
+    /*inicio*/
+        @media (max-width: 1550px) {
+            .cont-portada-img {
+                flex-wrap: wrap;
+                margin: 0 auto 30px;
+            }
+
+            .padre-cont-img {
+                width: 100%;
+                justify-content: center;
+            }
+
+
+            .sección-imag-y-text {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media (max-width: 1069px) {
+            header {
+                justify-content: center;
+                flex-wrap: wrap;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            header {
+                width: 100%;
+            }
+
+            main {
+                width: 100vh;
+            }
+
+            .div-portada .panadería-foto {
+                width: 100vh;
+            }
+
+            footer {
+                width: 100vh;
+            }
+
+        }
+
+        @media (max-width: 270px) {
+            header {
+                width: 100%;
+            }
+
+            body {
+                width: 100vh;
+            }
+
+            .div-portada .panadería-foto {
+                width: 100vh;
+            }
+
+            .sección-imag-y-text {
+                width: 100%;
+            }
+
+            footer {
+                width: 100vh;
+            }
+        }
+
+
+
+    /*-------------------------------------*/
+
+
+
+/* ---------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* SEPARACIÓN BODY DE FOOTER */
+
+    body {
+        padding-bottom: 400px;
+        position: relative;
+        min-height: 100vh;
+    }
+
+/*----------------------------*/
+
+/* FOOTER */
+
+    footer {
+        background-color: rgb(236, 191, 176);
+        min-width: 100%;
+        height: 350px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        bottom: 0;
+    }
+
+    footer div ul li {
+        margin-left: 2%;
+        display: inline-block;
+    }
+
+    footer div ul li img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer div ul li , .text-redes-sociales {
+        width: 400px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 48px;
+    }
+
+/* ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inicio.html */
+
+
+
+
+/*-------------*/
+
+
+
+
+/* soporte.html */
+
+
+/*--------------*/
+
+
+
+
+/* productos.html */
+
+
+/*----------------*/
+
+
+
+
+/* nosotros.html */
+
+
+/*---------------*/
