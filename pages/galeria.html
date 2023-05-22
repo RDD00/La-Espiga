@@ -4,34 +4,130 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
+
+        <!--Librería BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="/style.css">
         <title>Galería | LA ESPIGA</title>
     </head>
-    <body>        
+    <body class="body-galeria">        
         <header>
-            <h1 class="titulo-pag">LA ESPIGA</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./soporte.html">Soporte</a></li>
-                    <li><a href="#">Galería</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+
+                    <!--contendor de los obj dentro de <nav> -->
+                <div class="container-fluid">
+
+                        <!--titulo/nombre de la pag/panadería-->
+                    <a class="navbar-brand" href="#">LA ESPIGA</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                        <!--contenedor que alberga los links de las pags-->
+                    <div class="cont-link-pags collapse navbar-collapse " id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./soporte.html">SOPORTE</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NOSOTROS
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">Galería</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+    
+                </div>
+    
+              </nav>
+    
             </nav>
-        </header>
+    </header>
 
-        <main>
-            <section class="padre-cont">
+        <main class="main-de-galeria">
+            <section>
 
-                <!-- GALERÍA -->
+                <article class="padre-cont-galeria container-sm">
 
-                <article class="cont-galeria">
-                    <div class="img-galeria1"><img src="" alt=""></div>
-                    <div class="img-galeria2"><img src="" alt=""></div>
-                    <div class="img-galeria3"><img src="" alt=""></div>
-                    <div class="img-galeria4"><img src="" alt=""></div>
-                    <div class="img-galeria5"><img src="" alt=""></div>
+                    <!--1ra fila-->
+                    <div class="row">
+
+                        <div class="columna-1 col-sm-4">
+                            <img class="imag-0" src="/icon/android-chrome-512x512.png" alt="PANES">
+                        </div>
+
+                        <div class="columna-2 col-sm-8">
+                            <img class="imag-1" src="/image/familia panadera.jpeg" alt="PANES">
+                        </div>
+
+                    </div>
+
+                    <!--2da fila-->
+                    <div class="row">
+
+                        <div class="columna-3 col-sm">
+                            <img class="imag-2" src="/image/PRODUCTOS (PANES).jpeg" alt="PANES">
+                        </div>
+
+                        <div class="columna-4 col-sm">
+                            <img class="imag-3" src="/image/PRODUCTOS (PANES).jpeg" alt="PANES">
+                        </div>
+
+                        <div class="columna-5 col-sm">
+                            <img class="imag-4" src="/image/PRODUCTOS (PANES).jpeg" alt="PANES">
+                        </div>
+                        
+
+                    </div>
+
+                    <!-- 3ra fila -->
+                    <div class="row">
+
+                        <div class="columna-5 col-sm">
+                            <img class="imag-5" src="/image/panadero-agarrando-una-bandeja.jpg" alt="PANES">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="columna-6 col-sm-4">
+                            <img class="imag-6" src="/image/panadero-con-pan-grande.jpg" alt="PANES">
+                        </div>
+
+                    </div>
+
                 </article>
 
             </section>
@@ -39,14 +135,17 @@
 
                 <!-- MAPS, REDES SOCIALES -->
 
-        <footer>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d128133415.74013016!2d-64.3911093!3d-11.4567025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f685aab20b7d41%3A0x40c12f0ebd2f47b9!2sPanader%C3%ADa%20%26%20Confiter%C3%ADa%20ROCCO!5e0!3m2!1ses!2sar!4v1681857563550!5m2!1ses!2sar" width="400" height="300" style="border:0;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-                    <ul>
-                        <li><img src="../icon/whatsapp.svg" alt="Whatsapp">11-8822-1356</li>
-                        <li><img src="../icon/square-instagram.svg" alt="square-instagram">@Panadería</li>
-                    </ul>
-                </div>
+        <footer class="footer-galeria">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.8189592057745!2d-58.223214892659755!3d-34.778173499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328cfd39b806f%3A0x96a359b98ac3c83d!2sLa%20Espiga!5e0!3m2!1ses-419!2sar!4v1682714472991!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="cont-logos-redes">
+                <ul>
+                    <li><img src="/icon/whatsapp.svg" alt="Whatsapp"><p class="text-redes-sociales">11-8822-1356</p></li>
+                    <li><img src="/icon/square-instagram.svg" alt="square-instagram"><p class="text-redes-sociales">@Panadería</p></li>
+                </ul>
+            </div>
         </footer>
+
+        <!--Librería BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>
