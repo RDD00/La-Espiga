@@ -252,6 +252,7 @@
 
         .sección-imag-y-text .cont-portada-img .padre-cont-img {
             display: flex;
+            flex-direction: row;
             align-items: center;
             /*border: 2px solid red;*/
             margin: 0 30px 0 30px;
@@ -261,7 +262,6 @@
             border-radius: 100%;
         }
 
-        /* separación bordes del text del cont */
         .sección-imag-y-text .cont-portada-img .portada-quienes-somos .cuadro-de-text {
             margin: 20px;
             display: flex;
@@ -290,50 +290,48 @@
 
 /* SEPARACIÓN BODY DE FOOTER */
 
-    body {
-        background-color: rgba(97, 99, 99, 0.267);
-        padding-bottom: 400px;
-        position: relative;
-        min-height: 100vh;
-        /*border: 2px solid red;*/
-    }
+body {
+    background-color: rgba(97, 99, 99, 0.521);
+    padding-bottom: 400px;
+    position: relative;
+    min-height: 100vh;
+    /*border: 2px solid red;*/
+}
 
 /*----------------------------*/
 
 /* FOOTER */
 
-    footer {
-        background-color: #ecbfb0;
-        min-width: 100%;
-        height: 350px;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        bottom: 0;
-        box-shadow: 
-                inset 0px -10px 20px rgba(255, 255, 255, 0.788);
-    }
+footer {
+    background-color: rgb(236, 191, 176);
+    min-width: 100%;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+}
 
-    footer div ul li {
-        margin-left: 2%;
-        display: inline-block;
-    }
+footer div ul li {
+    margin-left: 2%;
+    display: inline-block;
+}
 
-    footer div ul li img {
-        width: 100px;
-        height: 100px;
-    }
+footer div ul li img {
+    width: 100px;
+    height: 100px;
+}
 
-    footer div ul li, .text-redes-sociales {
-        width: 400px;
-        /*border: 2px solid red;*/
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 48px;
-    }
+footer div ul li, .text-redes-sociales {
+    width: 400px;
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 48px;
+}
 
 /* ---------------------------------------------------- */
 
@@ -354,12 +352,13 @@
 
             /* GENERAL */
 
-                
                 header {
+                    justify-content: center;
+                    flex-wrap: wrap;
                     height: 180px;
+                    width: 100%;
                 }
 
-                /* usar un poco menos de px de alto*/
                 .navbar {
                     padding-top: 0;
                 }
@@ -367,35 +366,29 @@
                 .container-fluid {
                     display: flex;
                     flex-direction: column;
+                    flex-wrap: nowrap;
                 }
 
-                /* <button> en columna con los links de las pags */
                 .container-fluid .cont-button_links {
                     display: flex;
                     flex-direction: column;
                 }
 
-                /* link de las pags en fila */
                 .cont-link-pags ul {
-                    width: 300px;
                     flex-direction: row;
+                    width: 300px;
                 }
 
-                /* adaptación de tamaño de fuente a la resolución */
                 .cont-link-pags ul li {
+                    width: 100%;
                     font-size: 15px;
                 }
 
-                .cont-link-pags ul .dropdown {
-                    width: 25%;
-                }
-
-                /* separación <body> de <footer>*/
                 body {
                     padding-bottom: 500px;
                 }
 
-                /* adaptación <footer> a resolución de teléfono */
+                /* adaptación <footer> a resolución*/
                 footer {
                     height: 450px;
                     width: 100%;
