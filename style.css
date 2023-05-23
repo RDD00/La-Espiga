@@ -116,9 +116,13 @@
             height: 100%;
             border-radius: 20px;
         }
-        
+
+        div .columna-1 .imag-0 {
+            border-radius: 100%;
+        }
+
         .columna-2 {
-            width: 55%;
+            width: 60%;
             margin: 0 auto;
         }
         
@@ -129,9 +133,8 @@
         }
         
         
-        .imag-0 {
-            border-radius: 100%;
-        }
+
+        
     /* ------------------------------------------- */
 
 /*---------------------------------------*/
@@ -466,6 +469,10 @@ footer div ul li, .text-redes-sociales {
                     margin-top: 100px;
                 }
 
+
+                .columna-2 {
+                    width: 100%;
+                }
 
 
             /* -------------------- */
