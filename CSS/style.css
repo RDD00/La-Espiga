@@ -30,7 +30,6 @@ footer div ul li {
 footer div ul li .text-redes-sociales {
   margin-left: 5px;
   width: 400px;
-  /*border: 2px solid red;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -64,6 +63,9 @@ header {
 header .navbar .container-fluid {
   flex-wrap: nowrap;
 }
+header .navbar .container-fluid .navbar-brand {
+  font-size: 60px;
+}
 header .navbar .container-fluid .cont-button_links .cont-link-pags ul li {
   font-size: 30px;
   margin-left: 10px;
@@ -93,9 +95,6 @@ header .navbar .container-fluid .cont-button_links .cont-link-pags ul li a:hover
 header .navbar .container-fluid .cont-button_links .cont-link-pags ul li a:focus {
   color: brown;
   transition: 0.5s;
-}
-header .navbar .container-fluid .navbar-brand {
-  font-size: 60px;
 }
 
 /*SEPARACIÓN <body> DE <footer>*/
@@ -447,13 +446,6 @@ body {
   line-height: 25px;
 }
 
-/*.product-text {
-    margin: 0;
-    font-size: 30px;
-    font-weight: lighter;
-    text-align: center;
-    color: white;
-}*/
 .cont-nosotros {
   display: flex;
   justify-content: center;
@@ -470,19 +462,20 @@ body {
   height: 500px;
   width: 500px;
 }
-.cont-nosotros .text-nosotros h1 {
-  color: white;
-  font-size: 50px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
-}
-.cont-nosotros .text-nosotros p {
-  color: black;
-  font-size: 20px;
-}
 .cont-nosotros .familia-panadera {
   position: relative;
   width: 100%;
   z-index: -1;
+}
+
+.text-nosotros h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+}
+.text-nosotros p {
+  color: black;
+  font-size: 20px;
 }
 
 .text-nosotros {
@@ -581,10 +574,9 @@ body::-webkit-scrollbar-thumb {
   /* evita que las listas del <footer> rompan con el ancho de la resolución*/
   footer div ul li {
     width: 100%;
+    /* tamaño de los textos del footer*/
   }
   footer div ul li .text-redes-sociales {
-    /*width: 400px;*/
-    /*border: 2px solid red;*/
     font-size: 28px;
   }
   footer div ul li img {
@@ -607,19 +599,17 @@ body::-webkit-scrollbar-thumb {
   .sección-imag-y-text .cont-portada .padre-cont-img {
     width: 100%;
     justify-content: center;
+    padding-top: 20px;
   }
   .sección-imag-y-text .img-link-galeria a p {
     font-size: 50px;
-  }
-  .padre-cont-img {
-    padding-top: 20px;
   }
   .accordion-body p {
     font-size: 12px;
   }
   /* --------------------- */
   /* GALERIA*/
-  /* incluye separación la galería del <header>*/
+  /* incluye separación de la galería del <header>*/
   .container-sm {
     margin-top: 100px;
     width: 80%;

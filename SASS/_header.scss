@@ -14,10 +14,13 @@ header {
 
 
     .navbar {
-
         .container-fluid {
             flex-wrap: nowrap;
-            
+
+            .navbar-brand {
+                font-size: 60px;
+            }
+
             .cont-button_links {
 
                 .cont-link-pags ul li {
@@ -55,10 +58,6 @@ header {
                         transition: .5s;
                     }
                 }
-            }
-
-            .navbar-brand {
-                font-size: 60px;
             }
         }
     }

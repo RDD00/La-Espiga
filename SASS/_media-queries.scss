@@ -71,18 +71,21 @@
         /* evita que las listas del <footer> rompan con el ancho de la resolución*/
         footer div ul li {
             width: 100%;
+
+            /* tamaño de los textos del footer*/
+            .text-redes-sociales {
+                font-size: 28px;
+            }
+
+            img {
+                width: 25%;
+                padding-right: 10px;
+            }
         }
 
-        footer div ul li .text-redes-sociales {
-            /*width: 400px;*/
-            /*border: 2px solid red;*/
-            font-size: 28px;
-        }
+        
 
-        footer div ul li img {
-            width: 25%;
-            padding-right: 10px;
-        }
+        
 
     /* INICIO */
 
@@ -102,16 +105,13 @@
                 .padre-cont-img {
                     width: 100%;
                     justify-content: center;
+                    padding-top: 20px;
                 }
             }
 
             .img-link-galeria a p {
                 font-size: 50px;
             }
-        }
-
-        .padre-cont-img {
-            padding-top: 20px;
         }
 
         .accordion-body p {
@@ -123,7 +123,7 @@
 
     /* GALERIA*/
 
-            /* incluye separación la galería del <header>*/
+        /* incluye separación de la galería del <header>*/
         .container-sm {
             margin-top: 100px;
             width: 80%;
