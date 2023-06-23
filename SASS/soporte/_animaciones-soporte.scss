@@ -1,0 +1,21 @@
+.zona-form {
+    transition: .5s;
+
+    .formulario {
+
+        .boton {
+            transition: .5s;
+        }
+
+        .boton:hover {
+            transition: .5s;
+            transform: scale(1.01);
+        }
+    
+    }
+}
+
+.zona-form:hover {
+    transform: scale(1.01);
+    transition: .5s;
+}

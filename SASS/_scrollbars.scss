@@ -1,0 +1,21 @@
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    opacity: 70%;
+    border-radius: 10px;
+    border-right: 2px solid grey;
+}
+
+.padre-cont-galeria::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.205);
+    width: 7px;
+} 
+
+.padre-cont-galeria::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-180deg, rgb(226, 140, 118), coral);
+    border-radius: 10px;
+    padding: 1px 1px 1px 5px;
+}

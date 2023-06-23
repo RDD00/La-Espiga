@@ -1,0 +1,17 @@
+.text-nosotros {
+    transition: 1s;
+
+    p {
+        transition: .5s;
+    }
+}
+
+.text-nosotros:hover {
+    transform: scale(1.1);
+    transition: 1s;
+
+    p:hover {
+        text-shadow: 0 0 10px white;
+        transition: .5s;
+    }
+}

@@ -1,0 +1,77 @@
+.panadería-foto {
+    z-index: -1;
+    position: absolute;
+    filter: blur(10px);
+    width: 100%;
+    height: 909px;
+}
+
+.sección-imag-y-text {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto 10px;
+    
+    .cont-portada {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .portada-quienes-somos {
+            width: 100%;
+        }
+
+        .padre-cont-img {
+            display: flex;
+            align-items: center;
+            margin: 0 30px 0 30px;
+
+            .imagenes .logo-cont .logo {
+                border-radius: 100%;
+                width: 227px;
+                height: 227px;
+            }
+            
+            /* fuente del accordion */
+            .parrafo {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .img-link-galeria {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        object-fit: cover;
+        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10%;
+                box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.37);
+                filter: brightness(50%) blur(2px) saturate(20%);
+            }
+            p {
+                text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.404);
+                font-size: 100px;
+                font-weight: bolder;
+                color: white;
+                position: absolute;
+            }
+        }
+    }
+}

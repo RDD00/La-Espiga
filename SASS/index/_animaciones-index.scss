@@ -1,0 +1,17 @@
+.cont-portada {
+    transition: .7s;
+}
+
+.cont-portada:hover {
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.img-link-galeria a, .img-link-galeria img {
+    transition: 1s;
+}
+
+.img-link-galeria a:hover, .img-link-galeria img:hover {
+    transform: scale(1.07);
+    transition: 1s;
+}

@@ -1,0 +1,38 @@
+
+.cont-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-image: linear-gradient(45deg, $background-color-common, coral);
+        border-radius: 15px;
+        height: 500px;
+        width: 500px;
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            text-shadow: $box-shadow;
+        }
+
+
+        p {
+            color: black;
+            font-size: 20px;
+        }
+    }
+
+    .familia-panadera {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+
+
+}

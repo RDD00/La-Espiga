@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Geologica';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+$background-color-common: #ecbfb0;
+
+$background-color-header: rgba(236, 191, 176, 0.712);
+
+$margin-centrado: 0 auto;
+
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;700&display=swap');
+@import "footer";
+@import "header";
+@import "body";
+@import "separacion-de-nav";
+@import "galeria/animaciones-galeria";
+@import "galeria/cont-galería";
+@import "index/cont-index";
+@import "index/animaciones-index";
+@import "soporte/cards-soporte";
+@import "soporte/cont-soporte";
+@import "soporte/animaciones-soporte";
+@import "productos/product-contenedores";
+@import "productos/animaciones-product";
+@import "productos/textos-productos";
+@import "nosotros/cont-nosotros";
+@import "nosotros/text-nosotros";
+@import "nosotros/animaciones-nosotros";
+@import "scrollbars";
+
+@import "media-queries";
+
+

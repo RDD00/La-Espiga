@@ -4,69 +4,146 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
+
+        <meta name="description" content="La Espiga, una panadería familiar ideal para darse unos gustos">
+        <meta name="keywords" content="PANADERIA, FACTURAS, PANES, COMIDA, FAMILIA">
+        
+        <!--Librería BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!--ANIMATIONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <!-- SCROLL ANIMATIONS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../CSS/style.css">
+
         <title>Soporte | LA ESPIGA</title>
     </head>
     <body>
         <header>
-            <h1 class="titulo-pag">LA ESPIGA</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Soporte</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+
+                    <!--contendor de los obj dentro de <nav> -->
+                <div class="container-fluid">
+
+                        <!--titulo/nombre de la pag/panadería-->
+                    
+                        <a class="navbar-brand" href="../index.html">LA ESPIGA</a>
+
+                    <div class="cont-button_links">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+
+                            <!--contenedor que alberga los links de las pags-->
+                        <div class="cont-link-pags collapse navbar-collapse " id="navbarSupportedContent">
+
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SOPORTE</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NOSOTROS
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+
+                                        <li>
+                                            <a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="./galeria.html">Galería</a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+    
+                </div>
+    
+              </nav>
+    
             </nav>
-        </header>
+    </header>
 
         <main> 
-            
-            <div class="card-content">
-                <div class="card1 card-style"></div>
-                <div class="card2 card-style"></div>
-                <div class="card3 card-style"></div>
-                <div class="card4 card-style"></div>
-            </div>
-
-
 
             <!-- SECCIÓN SOPORTE -->
 
-            <section class="zona-form">
-                <h2 class="titulo">Soporte</h2>
-                <form action="" class="formulario">
+            <section class="container-fluid cont-form" data-aos="fade-up">
+                <article class="zona-form container-sm">
+                    <div>
+                        <h2 class="titulo">Soporte</h2>
+                        <img class="img-form" src="../image/soporte-técnico.png" alt="soporte-tecnico">
+                    </div>
+                    <form action="" class="formulario">
 
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <label for="nombre">Nombre:</label>
+                        <input class="controles" type="text" name="nombre" id="nombre" placeholder="Nombre">
 
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                        <label for="asunto">Asunto:</label>
+                        <textarea class="controles" placeholder="Asunto" name="asunto" id="asunto" cols="30" rows="1"></textarea>
 
-                    <label for="correo">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="correo">Email:</label>
+                        <input class="controles" type="email" name="email" id="email" placeholder="Email">
 
-                    <textarea name="Soporte" id="Cuadro Contacto" cols="30" rows="1"></textarea>
-                </form>
+                        <input class="boton" type="button" value="Enviar">
+                    </form>
+                    <p>Cualquier inconveniente (con algún producto o atención al clientre, entre otras cosas) informe por este medio donde le daremos su debida atención.</p>
+                </article>
             </section>
 
-            <section class="text-random">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vero. Sequi deleniti adipisci obcaecati ratione architecto vitae commodi ea labore officiis, tenetur praesentium. Eos corporis voluptas facere aliquam id nulla.</p>
-            </section>
+            
         </main>
 
             <!-- PIE DE PÁGINA -->
 
             <footer>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d128133415.74013016!2d-64.3911093!3d-11.4567025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f685aab20b7d41%3A0x40c12f0ebd2f47b9!2sPanader%C3%ADa%20%26%20Confiter%C3%ADa%20ROCCO!5e0!3m2!1ses!2sar!4v1681857563550!5m2!1ses!2sar" width="400" height="300" style="border:0;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.8189592057745!2d-58.223214892659755!3d-34.778173499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328cfd39b806f%3A0x96a359b98ac3c83d!2sLa%20Espiga!5e0!3m2!1ses-419!2sar!4v1682714472991!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="cont-logos-redes">
                         <ul>
-                            <li><img width="100" height="100" src="/icon/whatsapp.svg" alt="Whatsapp">12-3456-7890</li>
-                            <li><img width="100" height="100" src="/icon/square-instagram.svg" alt="square-instagram">@xxxxxxx</li>
+                            <li>
+                                <img src="../icon/whatsapp.svg" alt="Whatsapp">
+                                <p class="text-redes-sociales">11-8822-1356</p>
+                            </li>
+                            <li>
+                                <img src="../icon/square-instagram.svg" alt="square-instagram">
+                                <p class="text-redes-sociales">@Panadería</p>
+                            </li>
                         </ul>
                     </div>
             </footer>
         
+            <!--Librería BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+            <!-- JS SCROLL ANIMATIONS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+            <!-------------------------->
     </body>
     </html>

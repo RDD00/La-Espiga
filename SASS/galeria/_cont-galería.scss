@@ -1,0 +1,50 @@
+/* GRILLAS (con BOOTSTRAPS!!)*/
+
+.padre-cont-galeria {
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, $background-color-common, coral);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.397);
+    width: 1000px;
+    height: 700px;
+    overflow: auto;
+    .row {
+        padding: 10px 0px;
+
+            /*separa las columnas*/
+        .columna-1,
+        .columna-2 {
+            display: flex;
+            align-items: center;
+
+                /*img's usan todo el ancho disponible*/
+            .imag-0, .imag-1 {
+                width: 100%;
+                border-radius: 12px;
+            }
+
+                /*lograr que el logo sea circular*/
+            .imag-0 {
+                border-radius: 100%;
+            }
+            
+            
+        }
+    }
+    
+        /*separar el .carousel del contenedor*/
+
+    .carousel {
+        padding-top: 10px;
+        object-fit: cover;
+    }
+            
+    .carousel-item {
+
+        .img-2-carousel {
+            height: 100%;
+        }
+    }
+
+}

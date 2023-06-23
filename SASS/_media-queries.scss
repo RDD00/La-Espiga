@@ -1,0 +1,188 @@
+/* ADAPTADO PARA A PARTIR DE ESTA RESULUCIÓN!!! */
+
+@media (max-width: 500px) {
+
+    /* GENERAL */
+
+        /*adaptación de header a la resolución*/
+        header {
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 180px;
+            width: 100%;
+
+            .navbar {
+                padding-top: 0;
+
+                .container-fluid {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+
+                    .navbar-brand {
+                        height: 70px;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .cont-button_links {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .cont-link-pags ul {
+                            flex-direction: row;
+                            width: 300px;
+                            
+                            li {
+                                width: 100%;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        /* separación <body> de <footer>*/
+        body {
+            padding-bottom: 500px;
+        }
+
+        /* adaptación <footer> a resolución*/
+        footer {
+            height: 450px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        iframe {
+            margin-top: 10px;
+            height: 50%;
+            width: 80%;
+        }
+
+        .cont-logos-redes {
+            width: 80%;
+        }
+
+
+        /* evita que las listas del <footer> rompan con el ancho de la resolución*/
+        footer div ul li {
+            width: 100%;
+        }
+
+        footer div ul li .text-redes-sociales {
+            /*width: 400px;*/
+            /*border: 2px solid red;*/
+            font-size: 28px;
+        }
+
+        footer div ul li img {
+            width: 25%;
+            padding-right: 10px;
+        }
+
+    /* INICIO */
+
+        .sección-imag-y-text {
+            flex-wrap: wrap;
+
+            /*separación del <nav>*/
+            padding-top: 100px;
+            
+            /* para que el accordion y el logo se pongan en columna*/
+            .cont-portada {
+                justify-content: center;
+                padding-bottom: 30px;
+                flex-wrap: wrap;
+                margin-right: 0px;
+                
+                .padre-cont-img {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+
+            .img-link-galeria a p {
+                font-size: 50px;
+            }
+        }
+
+        .padre-cont-img {
+            padding-top: 20px;
+        }
+
+        .accordion-body p {
+            font-size: 12px;
+        }
+    
+    /* --------------------- */
+
+
+    /* GALERIA*/
+
+            /* incluye separación la galería del <header>*/
+        .container-sm {
+            margin-top: 100px;
+            width: 80%;
+            justify-content: center;
+            padding-bottom: 10px;
+
+            .row {
+
+                .columna-2 {
+                    width: 100%;
+                    padding-top: 10px;
+                }
+            }
+        }
+
+
+    /* -------------------- */
+
+    /* SOPORTE */
+
+        .cont-form {
+            padding-top: 200px;
+        }
+
+    /* --------------------- */
+
+    /* PRODUCTOS */
+        .text-inicial-product {
+            padding-top: 200px;
+        }
+
+    /* --------------------- */
+
+    /* NOSOTROS */
+
+        .sobre-nosotros {
+            padding: 180px 0 100px 0;
+
+            .text-nosotros {
+                width: 300px;
+                height: 450px;
+
+                .parrafo-nosotros {
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    text-align: justify;
+                }
+            }
+
+            img {
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+        
+
+    /* --------------------- */
+
+}
+
+
+/*-------------------------------------*/
